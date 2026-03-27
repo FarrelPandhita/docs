@@ -372,29 +372,7 @@ Catatan:
 
 ---
 
-### GET /api/statistics/reports-pie — Breakdown Status Laporan
 
-**Auth**: Tidak diperlukan
-
-Digunakan untuk visualisasi pie chart atau donut chart di dashboard admin.
-
-**Response 200**:
-```json
-{
-  "data": {
-    "total": 37,
-    "breakdown": [
-      { "status": "diterima", "count": 9, "percentage": 24 },
-      { "status": "diproses", "count": 9, "percentage": 24 },
-      { "status": "selesai",  "count": 19, "percentage": 51 }
-    ]
-  }
-}
-```
-
-`percentage` adalah nilai integer (0–100) yang sudah dihitung dan siap digunakan langsung pada data chart.
-
----
 
 ## Penanganan Error
 
